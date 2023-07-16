@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Row(
                     children: [
                       Container(
-                          margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                          margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
 
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                       decoration: BoxDecoration(
@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Row(
                             children: [
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
                                 width: 222,
                                 decoration: BoxDecoration(
@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               ),
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
                                 width: 222,
                                 decoration: BoxDecoration(
@@ -160,7 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
 
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
                                 width: 222,
                                 decoration: BoxDecoration(
@@ -172,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
                                 width: 222,
                                 decoration: BoxDecoration(
@@ -181,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               ),
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
 
                                 width: 222,
@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               ),
                               Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                                 height: 222,
                                 width: 222,
                                 decoration: BoxDecoration(
@@ -213,7 +213,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Row(
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -222,7 +222,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                       decoration: BoxDecoration(
@@ -232,7 +232,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -241,7 +241,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -250,7 +250,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -259,7 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -268,7 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -277,7 +277,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                       decoration: BoxDecoration(
@@ -294,7 +294,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Row(
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                          decoration: BoxDecoration(
@@ -303,7 +303,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -312,7 +312,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -321,7 +321,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -330,7 +330,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                       decoration: BoxDecoration(
@@ -340,7 +340,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -349,7 +349,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                         height: 222,
                         width: 222,
                         decoration: BoxDecoration(
@@ -361,7 +361,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                   height: 222,
                   width: 222,
                   decoration: BoxDecoration(
@@ -370,7 +370,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                   height: 222,
                   width: 222,
                   decoration: BoxDecoration(
@@ -379,7 +379,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                   height: 222,
                   width: 222,
                   decoration: BoxDecoration(
@@ -388,7 +388,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 11, left: 11),
+                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
                   height: 222,
                   width: 222,
                   decoration: BoxDecoration(
