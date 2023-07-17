@@ -1,3 +1,4 @@
+import 'package:ecommerce/2nd%20page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -134,11 +135,19 @@ var passText = TextEditingController();
                   String uPass = passText.text;
                   print("Email:$uEmail , Pass:$uPass");
 
-                }, child: Text(
+                }, child: const Text(
                   'Login'
                 )
                 ),
+              ),
+              ElevatedButton(onPressed:  (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return  second();
+                },),);
+
+              }, child: const Text('next')
               )
+
 
             ],
           ),
