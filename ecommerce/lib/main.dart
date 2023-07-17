@@ -1,3 +1,5 @@
+import 'package:ecommerce/2nd%20page.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +37,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+var emailText = TextEditingController();
+var passText = TextEditingController();
 
 
   @override
@@ -49,360 +52,108 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('helo'),
       ),
 
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
+      body: Center(
+        child: SizedBox(
+          width: 350,
+          child:  Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextField(
+                  keyboardType: TextInputType.phone,
+                controller: emailText,
+                decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: const BorderSide(
+                      color: Colors.blue,
+                      width: 3,
 
-          child: Center(
-            child: Column(
-              children: [
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Container(
-                          margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
+                    )
+                  ) ,
+                  hintText: "Mobile no de",
+                    prefixIcon: const Icon(Icons.phone),
 
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.green,
 
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.red,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.blue,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.indigo,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
 
-                        color: Colors.redAccent,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
 
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.blueGrey,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.green,
 
-                        ),
-                      ),
+                  )
+                )
 
-                    ],
-                  ),
+
+              ),
+              Container(
+                height: 20,
+              ),
+              TextField(
+                controller: passText ,
+                  obscureText: true,
+                  obscuringCharacter: "*",
+                  decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(25),
+                          borderSide: const BorderSide(
+                            color: Colors.blue,
+                            width: 3,
+
+                          )
+                      ) ,
+                      disabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: const BorderSide(
+                          color: Colors.black45,
+                          width: 3,
+                        )
+                      ),
+                      suffix: const Text(" sahi dal"),
+                      hintText: " Password Dal ..",
+                      suffixIcon: IconButton(
+                        icon: const Icon(Icons.remove_red_eye_outlined),
+                        onPressed:(){
+
+                        },
+                      ) ,
+                      prefixIcon:const Icon(Icons.key_rounded),
+
+
+
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+
+
+                      )
+                  )
+
+
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ElevatedButton(onPressed: (){
+                  String uEmail = emailText.text.toString();
+                  String uPass = passText.text;
+                  print("Email:$uEmail , Pass:$uPass");
+
+                }, child: const Text(
+                  'Login'
+                )
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Row(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-                                width: 222,
-                                decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(60),
-                                color: Colors.brown,
-                              ),
-                              ),
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-                                width: 222,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(60),
-                                  color: Colors.yellowAccent,
-                              ),
-                              ),
+              ),
+              ElevatedButton(onPressed:  (){
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return  second();
+                },),);
 
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-                                width: 222,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(60),
-
-                                color: Colors.black,
-                              ),
-                              ),
+              }, child: const Text('next')
+              )
 
 
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-                                width: 222,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(60),
-                                color: Colors.green,
-                              ),
-                              ),
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-
-                                width: 222,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(60),
-                                color: Colors.red,
-                              ),
-                              ),
-                              Container(
-                                margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                                height: 222,
-                                width: 222,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(60),
-                                  color: Colors.lightBlueAccent
-
-                              ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-
-                    ],
-                  ),
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.blue,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.green,
-
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.red,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.blue,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.indigo,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.redAccent,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.green,
-
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                         decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(60),
-                        color: Colors.yellow,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.brown,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.yellow,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.black,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.green,
-
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.red,
-                      ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                        height: 222,
-                        width: 222,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                        color: Colors.black,
-                      ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                  height: 222,
-                  width: 222,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60),
-                  color: Colors.red,
-                ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                  height: 222,
-                  width: 222,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60),
-                  color: Colors.teal,
-                ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                  height: 222,
-                  width: 222,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60),
-                  color: Colors.orange,
-                ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(top:10, bottom:10,right: 10, left: 10),
-                  height: 222,
-                  width: 222,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60),
-                  color: Colors.brown,
-                  ),
-
-                ),
-
-              ],
-            ),
+            ],
           ),
         ),
       )
+
     );
 
 
